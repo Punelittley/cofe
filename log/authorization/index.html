@@ -23,67 +23,65 @@ main {
     flex: 1 0 auto;
 }
 </style>
-    <header>
-        <a href="/index.html">
-            <img src="/assets/images/logo.svg" alt="Логотип кофейни">
-        </a>
-        <div class="burger-menu" id="burgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav>
-            <ul>
-                <a href="/index.html#section1"><li>О нас</li></a>
-                <a href="/index.html#section2"><li>Меню</li></a>
-                <a href="/index.html#section3"><li>Отзывы</li></a>
-                <a href="/index.html#section4"><li>Контакты</li></a>
-                <a href="/index.html#section5"><li>Вопросы</li></a>
-            </ul>
+   <header>
+    <a href="/index.html">
+        <img src="/assets/images/logo.svg" alt="Логотип кофейни">
+    </a>
+    <div class="burger-menu" id="burgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/index.html#section1">О нас</a></li>
+            <li><a href="/index.html#section2">Меню</a></li>
+            <li><a href="/index.html#section3">Отзывы</a></li>
+            <li><a href="/index.html#section4">Контакты</a></li>
+            <li><a href="/index.html#section5">Вопросы</a></li>
+        </ul>
 
+        <div class="theme-toggle">
+            <img src="/assets/images/moon.svg" alt="Темная тема" id="moon-icon" class="theme-icon active">
+            <img src="/assets/images/sun.svg" alt="Светлая тема" id="sun-icon" class="theme-icon">
+        </div>
+        <img src="/assets/images/bag.svg" alt="Корзина" onclick="cart()" style="cursor:pointer">
+
+        <div class="auth-icon-wrap">
+            <a href="/log/authorization/" class="auth-login-btn" style="display:inline-block;">
+                <img src="/assets/images/account.svg" alt="Войти" title="Войти" style="cursor:pointer">
+            </a>
+            <img src="/assets/images/account.svg" alt="Профиль" title="Профиль"
+                 class="auth-profile-btn" style="display:none;cursor:pointer"
+                 onclick="login()">
+        </div>
+    </nav>
+
+    <!-- Мобильное меню (тоже должно быть одинаковым) -->
+    <div class="mobile-nav" id="mobileNav">
+        <span class="close-mobile-nav" id="closeMobileNav">&times;</span>
+        <ul>
+            <li><a href="/index.html#section1">О нас</a></li>
+            <li><a href="/index.html#section2">Меню</a></li>
+            <li><a href="/index.html#section3">Отзывы</a></li>
+            <li><a href="/index.html#section4">Контакты</a></li>
+            <li><a href="/index.html#section5">Вопросы</a></li>
+        </ul>
+        <div class="mobile-nav-icons">
             <div class="theme-toggle">
-                <img src="/assets/images/moon.svg" alt="Темная тема" id="moon-icon" class="theme-icon active">
-                <img src="/assets/images/sun.svg" alt="Светлая тема" id="sun-icon" class="theme-icon">
+                <img src="/assets/images/moon.svg" alt="Темная тема" id="moon-icon-mobile" class="theme-icon active">
+                <img src="/assets/images/sun.svg" alt="Светлая тема" id="sun-icon-mobile" class="theme-icon">
             </div>
-            <img src="/assets/images/bag.svg" alt="Корзина" onclick="cart()" style="cursor:pointer">
-
+            <img src="/assets/images/bag.svg" alt="Корзина" onclick="cart()">
             <div class="auth-icon-wrap">
-                <a href="/log/authorization/" class="auth-login-btn" style="display:inline-block;">
-                    <img src="/assets/images/account.svg" alt="Войти" title="Войти" style="cursor:pointer">
+                <a href="/log/authorization/" class="auth-login-btn">
+                    <img src="/assets/images/account.svg" alt="Войти">
                 </a>
-                <img src="/assets/images/account.svg" alt="Профиль" title="Профиль"
-                     class="auth-profile-btn" style="display:none;cursor:pointer"
-                     onclick="login()">
-            </div>
-        </nav>
-
-        <div class="mobile-nav" id="mobileNav">
-            <span class="close-mobile-nav" id="closeMobileNav">&times;</span>
-            <ul>
-                <li><a href="/index.html#section1">О нас</a></li>
-                <li><a href="/index.html#section2">Меню</a></li>
-                <li><a href="/index.html#section3">Отзывы</a></li>
-                <li><a href="/index.html#section4">Контакты</a></li>
-                <li><a href="/index.html#section5">Вопросы</a></li>
-            </ul>
-            <div class="mobile-nav-icons">
-                <div class="theme-toggle">
-                    <img src="/assets/images/moon.svg" alt="Темная тема" id="moon-icon-mobile" class="theme-icon active">
-                    <img src="/assets/images/sun.svg" alt="Светлая тема" id="sun-icon-mobile" class="theme-icon">
-                </div>
-                <img src="/assets/images/bag.svg" alt="Корзина" onclick="cart()">
-                <div class="auth-icon-wrap">
-                    <a href="/log/authorization/" class="auth-login-btn" style="display:inline-block;">
-                        <img src="/assets/images/account.svg" alt="Войти">
-                    </a>
-                    <img src="/assets/images/account.svg" alt="Профиль"
-                         class="auth-profile-btn" style="display:none;cursor:pointer"
-                         onclick="login()">
-                </div>
+                <img src="/assets/images/account.svg" alt="Профиль" class="auth-profile-btn" style="display:none;" onclick="login()">
             </div>
         </div>
-    </header>
-
+    </div>
+</header>
     <main>
     <div class="auth-container">
         <h2>Авторизация</h2>
